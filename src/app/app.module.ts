@@ -9,6 +9,8 @@ import { TaskItemComponent } from './components/task-item/task-item.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { HttpClientModule } from '@angular/common/http';
+import { AddTaskComponent } from './components/add-task/add-task.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,12 +19,14 @@ import { HttpClientModule } from '@angular/common/http';
     ButtonComponent,
     TasksComponent,
     TaskItemComponent,
+    AddTaskComponent,
   ],
   imports: [
     BrowserModule,
     NoopAnimationsModule,
     MatIconModule,
     HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
